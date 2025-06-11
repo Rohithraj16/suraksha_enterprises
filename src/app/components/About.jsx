@@ -61,7 +61,7 @@ export default function About() {
 				{/* Image */}
 				<div className="w-full md:w-1/2 flex justify-center mb-10 md:mb-0">
 					<Image
-						src="/about-graphic.png"
+						src="/about_page_pics/about-graphic.png"
 						alt="Water Bottle and Ice Cubes"
 						width={500}
 						height={500}
@@ -170,7 +170,7 @@ export default function About() {
 					<div className="md:w-1/2 relative mb-12 md:mb-0 flex justify-center">
 						<div className="relative z-10 shadow-xl rounded-md overflow-hidden">
 							<Image
-								src="/bottle.jpeg"
+								src="/about_page_pics/bottle.jpeg"
 								alt="Water Bottle"
 								width={350}
 								height={350}
@@ -206,49 +206,74 @@ export default function About() {
 			</section>
 
 			{/* Section 4: Testimonials Carousel */}
-			<section className="bg-blue-50 py-20 text-center">
-				<h2 className="text-3xl font-bold text-blue-900 mb-10">
-					What Our Clients are Saying About Acuasafe
+			<section className="bg-blue-50 py-8 text-center">
+				<h2 className="text-2xl font-bold text-blue-900 mb-6">
+					What Our Clients are Saying About Suraksha
 				</h2>
+
 				<Carousel
 					autoPlay
 					infiniteLoop
-					interval={4000}
+					interval={2000}
+					transitionTime={500}
 					showThumbs={false}
 					showStatus={false}
+					stopOnHover={false}
 				>
 					{[
 						{
-							name: "Nicolas Lawson",
+							name: "Person1",
 							role: "Designer",
-							img: "/testimonials/person1.jpg",
+							img: "/about_page_pics/profile_man.jpg",
 							message:
-								"Acuasafe delivers beyond expectations. Pure water with great taste!",
+								"Suraksha delivers beyond expectations. Pure water with great taste!",
 						},
 						{
-							name: "Michael Bean",
+							name: "Person2",
 							role: "Manager",
-							img: "/testimonials/person2.jpg",
+							img: "/about_page_pics/profile_man.jpg",
 							message:
-								"Trusted quality and excellent service from Acuasafe. Highly recommended!",
+								"Trusted quality and excellent service from Suraksha. Highly recommended!",
+						},
+						{
+							name: "Person3",
+							role: "Designer",
+							img: "/about_page_pics/profile_man.jpg",
+							message:
+								"Suraksha delivers beyond expectations. Pure water with great taste!",
+						},
+						{
+							name: "Person4",
+							role: "Designer",
+							img: "/about_page_pics/profile_man.jpg",
+							message:
+								"Suraksha delivers beyond expectations. Pure water with great taste!",
+						},
+						{
+							name: "Person5",
+							role: "Designer",
+							img: "/about_page_pics/profile_man.jpg",
+							message:
+								"Suraksha delivers beyond expectations. Pure water with great taste!",
 						},
 					].map((review, idx) => (
 						<div key={idx} className="flex justify-center">
-							<div className="bg-white rounded-lg shadow p-6 max-w-xl w-full text-left">
-								<div className="flex items-center gap-4 mb-4">
+							<div className="bg-white rounded-lg p-4 max-w-lg w-full text-left shadow">
+								<div className="flex-col items-center gap-3 mb-2">
 									<Image
 										src={review.img}
 										alt={review.name}
-										width={60}
-										height={60}
-										className="rounded-full"
+										width={200}
+										height={200}
+										className="rounded-full w-5 h-80"
 									/>
-									<div>
-										<p className="font-bold text-blue-900">{review.name}</p>
-										<p className="text-sm text-cyan-600">{review.role}</p>
-									</div>
+									<p className="font-semibold text-blue-900 text-xl">
+										{review.name}
+									</p>
 								</div>
-								<div className="text-gray-700 text-sm">{review.message}</div>
+								<p className="text-gray-700 leading-snug text-2xl">
+									{review.message}
+								</p>
 							</div>
 						</div>
 					))}
