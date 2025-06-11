@@ -119,7 +119,7 @@ const Home = () => {
 			</div>
 			{/* Kenger water filter advantages */}
 			<div className="text-center mb-12">
-				<h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+				<h2 className="mt-8 text-3xl md:text-4xl font-bold text-gray-800 mb-4">
 					Protect Your Family with Best Water
 				</h2>
 				<h3 className="text-2xl md:text-3xl font-bold text-gray-800">
@@ -127,11 +127,10 @@ const Home = () => {
 				</h3>
 			</div>
 
-			{/* Services Grid with spacing */}
-			<div className="mx-8 mt-16 mb-16">
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 relative">
+			<div className="mx-8 mt-16 mb-16 relative">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 relative justify-center">
 					{/* Purified Clean Water - 7.0 pH */}
-					<div className="bg-green-500 rounded-3xl p-8 text-white relative">
+					<div className="bg-green-500 rounded-3xl p-8 text-white relative flex flex-col justify-center items-center text-center min-w-[300px] min-h-[500px] md:min-w-[350px] md:min-h-[500px]">
 						<div className="absolute top-4 right-4 bg-gray-800 text-white px-3 py-1 rounded-lg text-sm font-semibold">
 							7.0 pH
 						</div>
@@ -142,22 +141,22 @@ const Home = () => {
 								className="w-full h-full object-cover"
 							/>
 						</div>
-						<div className="mt-20">
-							<h4 className="text-2xl font-bold mb-4">Purified clean water</h4>
-							<ul className="space-y-2 text-sm">
-								<li className="flex items-center">
+						<div className="flex flex-col items-center justify-center space-y-4">
+							<h4 className="text-3xl font-bold mb-4">Purified clean water</h4>
+							<ul className="space-y-4 text-lg">
+								<li className="flex items-center justify-center">
 									<span className="mr-2">💧</span>
 									Three layered water filter
 								</li>
-								<li className="flex items-center">
+								<li className="flex items-center justify-center">
 									<span className="mr-2">💧</span>
 									Removes chlorine and sediments like rust impurities
 								</li>
-								<li className="flex items-center">
+								<li className="flex items-center justify-center">
 									<span className="mr-2">💧</span>
 									Has essential minerals
 								</li>
-								<li className="flex items-center">
+								<li className="flex items-center justify-center">
 									<span className="mr-2">💧</span>
 									Best for medications and baby formula
 								</li>
@@ -173,7 +172,7 @@ const Home = () => {
 					</div>
 
 					{/* Purified Clean Water - 4.5-6 pH */}
-					<div className="bg-yellow-400 rounded-3xl p-8 text-black relative">
+					<div className="bg-yellow-400 rounded-3xl p-8 text-black relative flex flex-col justify-center items-center text-center min-w-[300px] min-h-[500px] md:min-w-[350px] md:min-h-[500px]">
 						<div className="absolute top-4 right-4 bg-gray-800 text-white px-3 py-1 rounded-lg text-sm font-semibold">
 							4.5 - 6 pH
 						</div>
@@ -184,26 +183,26 @@ const Home = () => {
 								className="w-full h-full object-cover"
 							/>
 						</div>
-						<div className="mt-20">
-							<h4 className="text-2xl font-bold mb-4">Purified clean water</h4>
-							<ul className="space-y-2 text-sm">
-								<li className="flex items-center">
+						<div className="flex flex-col items-center justify-center space-y-4">
+							<h4 className="text-3xl font-bold mb-4">Purified clean water</h4>
+							<ul className="space-y-4 text-lg">
+								<li className="flex items-center justify-center">
 									<span className="mr-2">💧</span>
 									Skin toner & Astringent
 								</li>
-								<li className="flex items-center">
+								<li className="flex items-center justify-center">
 									<span className="mr-2">💧</span>
 									Hair care, Groom pets
 								</li>
-								<li className="flex items-center">
+								<li className="flex items-center justify-center">
 									<span className="mr-2">💧</span>
 									Clean mirrors & glass
 								</li>
-								<li className="flex items-center">
+								<li className="flex items-center justify-center">
 									<span className="mr-2">💧</span>
 									House cleaning - Floor tiles
 								</li>
-								<li className="flex items-center">
+								<li className="flex items-center justify-center">
 									<span className="mr-2">💧</span>
 									Great for plants
 								</li>
@@ -212,7 +211,7 @@ const Home = () => {
 					</div>
 
 					{/* Strong Acidic Water - 2.5 pH */}
-					<div className="bg-orange-500 rounded-3xl p-8 text-white relative">
+					<div className="bg-orange-500 rounded-3xl p-8 text-white relative flex flex-col justify-center items-center text-center min-w-[300px] min-h-[500px] md:min-w-[350px] md:min-h-[500px]">
 						<div className="absolute top-4 right-4 bg-gray-800 text-white px-3 py-1 rounded-lg text-sm font-semibold">
 							2.5 pH
 						</div>
@@ -223,30 +222,30 @@ const Home = () => {
 								className="w-full h-full object-cover"
 							/>
 						</div>
-						<div className="mt-20">
-							<h4 className="text-2xl font-bold mb-4">Strong acidic water</h4>
-							<ul className="space-y-2 text-sm">
-								<li className="flex items-center">
+						<div className="flex flex-col items-center justify-center space-y-4">
+							<h4 className="text-3xl font-bold mb-4">Strong acidic water</h4>
+							<ul className="space-y-4 text-lg">
+								<li className="flex items-center justify-center">
 									<span className="mr-2">💧</span>
 									Disinfectant
 								</li>
-								<li className="flex items-center">
+								<li className="flex items-center justify-center">
 									<span className="mr-2">💧</span>
 									Electrolyzed Hypochlorous Acid
 								</li>
-								<li className="flex items-center">
+								<li className="flex items-center justify-center">
 									<span className="mr-2">💧</span>
 									Kills virus and bacteria
 								</li>
-								<li className="flex items-center">
+								<li className="flex items-center justify-center">
 									<span className="mr-2">💧</span>
 									Sterilizing & Sanitizing (Hand sanitizer)
 								</li>
-								<li className="flex items-center">
+								<li className="flex items-center justify-center">
 									<span className="mr-2">💧</span>
 									Skin rashes and allergies
 								</li>
-								<li className="flex items-center">
+								<li className="flex items-center justify-center">
 									<span className="mr-2">💧</span>
 									Make your own chemical free germ killing solutions at home
 								</li>
@@ -255,7 +254,7 @@ const Home = () => {
 					</div>
 
 					{/* Strong Kangen Water - 11.5 pH */}
-					<div className="bg-blue-600 rounded-3xl p-8 text-white relative">
+					<div className="bg-blue-600 rounded-3xl p-8 text-white relative flex flex-col justify-center items-center text-center min-w-[300px] min-h-[500px] md:min-w-[350px] md:min-h-[500px]">
 						<div className="absolute top-4 right-4 bg-gray-800 text-white px-3 py-1 rounded-lg text-sm font-semibold">
 							11.5 pH
 						</div>
@@ -266,22 +265,22 @@ const Home = () => {
 								className="w-full h-full object-cover"
 							/>
 						</div>
-						<div className="mt-20">
-							<h4 className="text-2xl font-bold mb-4">Strong Kangen water</h4>
-							<ul className="space-y-2 text-sm">
-								<li className="flex items-center">
+						<div className="flex flex-col items-center justify-center space-y-4">
+							<h4 className="text-3xl font-bold mb-4">Strong Kangen water</h4>
+							<ul className="space-y-4 text-lg">
+								<li className="flex items-center justify-center">
 									<span className="mr-2">💧</span>
 									Oil Emulsifier
 								</li>
-								<li className="flex items-center">
+								<li className="flex items-center justify-center">
 									<span className="mr-2">💧</span>
 									Removes pesticides and agricultural chemicals from food
 								</li>
-								<li className="flex items-center">
+								<li className="flex items-center justify-center">
 									<span className="mr-2">💧</span>
-									grains, fruits and vegetables &
+									grains, fruits and vegetables
 								</li>
-								<li className="flex items-center">
+								<li className="flex items-center justify-center">
 									<span className="mr-2">💧</span>
 									Cleans greasy pots, pans, laundry detergent
 								</li>
@@ -296,9 +295,9 @@ const Home = () => {
 						</div>
 					</div>
 
-					{/* Central Image - Made Much Bigger */}
+					{/* Central Image */}
 					<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-						<div className="w-80 h-80 rounded-full overflow-hidden border-8 border-white shadow-2xl">
+						<div className="w-96 h-96 rounded-full overflow-hidden border-8 border-white shadow-2xl">
 							<img
 								src="product4.webp"
 								alt="Water delivery professional"
