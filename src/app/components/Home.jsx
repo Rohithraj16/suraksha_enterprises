@@ -117,6 +117,197 @@ const Home = () => {
 					</div>
 				</div>
 			</div>
+			{/* Kenger water filter advantages */}
+			<div className="text-center mb-12">
+				<h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+					Protect Your Family with Best Water
+				</h2>
+				<h3 className="text-2xl md:text-3xl font-bold text-gray-800">
+					Filtering System Services
+				</h3>
+			</div>
+
+			{/* Services Grid with spacing */}
+			<div className="mx-8 mt-16 mb-16">
+				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12 relative">
+					{/* Purified Clean Water - 7.0 pH */}
+					<div className="bg-green-500 rounded-3xl p-8 text-white relative">
+						<div className="absolute top-4 right-4 bg-gray-800 text-white px-3 py-1 rounded-lg text-sm font-semibold">
+							7.0 pH
+						</div>
+						<div className="absolute top-4 left-4 w-24 h-24 rounded-full overflow-hidden border-2 border-white">
+							<img
+								src="image_baby2.jpeg"
+								alt="Child"
+								className="w-full h-full object-cover"
+							/>
+						</div>
+						<div className="mt-20">
+							<h4 className="text-2xl font-bold mb-4">Purified clean water</h4>
+							<ul className="space-y-2 text-sm">
+								<li className="flex items-center">
+									<span className="mr-2">💧</span>
+									Three layered water filter
+								</li>
+								<li className="flex items-center">
+									<span className="mr-2">💧</span>
+									Removes chlorine and sediments like rust impurities
+								</li>
+								<li className="flex items-center">
+									<span className="mr-2">💧</span>
+									Has essential minerals
+								</li>
+								<li className="flex items-center">
+									<span className="mr-2">💧</span>
+									Best for medications and baby formula
+								</li>
+							</ul>
+						</div>
+						<div className="absolute bottom-4 left-4 w-24 h-24 rounded-full overflow-hidden border-2 border-white">
+							<img
+								src="image_baby.jpeg"
+								alt="Baby"
+								className="w-full h-full object-cover"
+							/>
+						</div>
+					</div>
+
+					{/* Purified Clean Water - 4.5-6 pH */}
+					<div className="bg-yellow-400 rounded-3xl p-8 text-black relative">
+						<div className="absolute top-4 right-4 bg-gray-800 text-white px-3 py-1 rounded-lg text-sm font-semibold">
+							4.5 - 6 pH
+						</div>
+						<div className="absolute top-4 right-20 w-24 h-24 rounded-full overflow-hidden border-2 border-gray-800">
+							<img
+								src="women_beauty_water.jpeg"
+								alt="Woman"
+								className="w-full h-full object-cover"
+							/>
+						</div>
+						<div className="mt-20">
+							<h4 className="text-2xl font-bold mb-4">Purified clean water</h4>
+							<ul className="space-y-2 text-sm">
+								<li className="flex items-center">
+									<span className="mr-2">💧</span>
+									Skin toner & Astringent
+								</li>
+								<li className="flex items-center">
+									<span className="mr-2">💧</span>
+									Hair care, Groom pets
+								</li>
+								<li className="flex items-center">
+									<span className="mr-2">💧</span>
+									Clean mirrors & glass
+								</li>
+								<li className="flex items-center">
+									<span className="mr-2">💧</span>
+									House cleaning - Floor tiles
+								</li>
+								<li className="flex items-center">
+									<span className="mr-2">💧</span>
+									Great for plants
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					{/* Strong Acidic Water - 2.5 pH */}
+					<div className="bg-orange-500 rounded-3xl p-8 text-white relative">
+						<div className="absolute top-4 right-4 bg-gray-800 text-white px-3 py-1 rounded-lg text-sm font-semibold">
+							2.5 pH
+						</div>
+						<div className="absolute top-4 left-4 w-24 h-24 rounded-full overflow-hidden border-2 border-white">
+							<img
+								src="handwash_acidic_water.jpeg"
+								alt="Person cleaning"
+								className="w-full h-full object-cover"
+							/>
+						</div>
+						<div className="mt-20">
+							<h4 className="text-2xl font-bold mb-4">Strong acidic water</h4>
+							<ul className="space-y-2 text-sm">
+								<li className="flex items-center">
+									<span className="mr-2">💧</span>
+									Disinfectant
+								</li>
+								<li className="flex items-center">
+									<span className="mr-2">💧</span>
+									Electrolyzed Hypochlorous Acid
+								</li>
+								<li className="flex items-center">
+									<span className="mr-2">💧</span>
+									Kills virus and bacteria
+								</li>
+								<li className="flex items-center">
+									<span className="mr-2">💧</span>
+									Sterilizing & Sanitizing (Hand sanitizer)
+								</li>
+								<li className="flex items-center">
+									<span className="mr-2">💧</span>
+									Skin rashes and allergies
+								</li>
+								<li className="flex items-center">
+									<span className="mr-2">💧</span>
+									Make your own chemical free germ killing solutions at home
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					{/* Strong Kangen Water - 11.5 pH */}
+					<div className="bg-blue-600 rounded-3xl p-8 text-white relative">
+						<div className="absolute top-4 right-4 bg-gray-800 text-white px-3 py-1 rounded-lg text-sm font-semibold">
+							11.5 pH
+						</div>
+						<div className="absolute top-4 right-20 w-24 h-24 rounded-full overflow-hidden border-2 border-white">
+							<img
+								src="vegetable_image1.jpeg"
+								alt="Kitchen scene"
+								className="w-full h-full object-cover"
+							/>
+						</div>
+						<div className="mt-20">
+							<h4 className="text-2xl font-bold mb-4">Strong Kangen water</h4>
+							<ul className="space-y-2 text-sm">
+								<li className="flex items-center">
+									<span className="mr-2">💧</span>
+									Oil Emulsifier
+								</li>
+								<li className="flex items-center">
+									<span className="mr-2">💧</span>
+									Removes pesticides and agricultural chemicals from food
+								</li>
+								<li className="flex items-center">
+									<span className="mr-2">💧</span>
+									grains, fruits and vegetables &
+								</li>
+								<li className="flex items-center">
+									<span className="mr-2">💧</span>
+									Cleans greasy pots, pans, laundry detergent
+								</li>
+							</ul>
+						</div>
+						<div className="absolute bottom-4 right-4 w-24 h-24 rounded-full overflow-hidden border-2 border-white">
+							<img
+								src="fruits_image.jpeg"
+								alt="Vegetables"
+								className="w-full h-full object-cover"
+							/>
+						</div>
+					</div>
+
+					{/* Central Image - Made Much Bigger */}
+					<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+						<div className="w-80 h-80 rounded-full overflow-hidden border-8 border-white shadow-2xl">
+							<img
+								src="product4.webp"
+								alt="Water delivery professional"
+								className="w-full h-full object-cover"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	);
 };
