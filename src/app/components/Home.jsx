@@ -36,7 +36,7 @@ const Home = () => {
 				<div className="w-3/4 md:w-1/2 flex justify-center">
 					<div className="relative md:w-3/5 max-w-md">
 						<Image
-							src="/waterborn_figure.png"
+							src="/waterborn Figure in Motion.png"
 							alt="Waterborn Figure in Motion"
 							width={500}
 							height={500}
