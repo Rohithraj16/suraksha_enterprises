@@ -12,6 +12,10 @@ import {
 	Settings,
 	Zap,
 	Thermometer,
+	Battery,
+	Power,
+	Monitor,
+	Cpu,
 } from "lucide-react";
 
 function Services() {
@@ -85,6 +89,83 @@ function Services() {
 			],
 			image: "/services_page_pics/waterfilter_serviies_image5.jpg",
 			alt: "Water filter components and accessories",
+		},
+	];
+	const ups_services = [
+		{
+			id: 1,
+			title: "UPS Installation & Setup",
+			description:
+				"Professional installation of UPS systems for homes and offices. We ensure proper sizing, configuration, and integration with your electrical systems for reliable backup power.",
+			features: [
+				"System sizing & selection",
+				"Professional installation",
+				"Load testing",
+				"User training",
+			],
+			image: "/services_page_pics/ups_services_image1.jpg",
+			alt: "UPS installation and setup service",
+			icon: <Power className="h-8 w-8" />,
+		},
+		{
+			id: 2,
+			title: "Battery Replacement & Testing",
+			description:
+				"Expert battery replacement and testing services for all UPS brands. We ensure your backup power system is always ready with high-quality replacement batteries.",
+			features: [
+				"Battery health testing",
+				"Genuine replacements",
+				"Proper disposal",
+				"Performance verification",
+			],
+			image: "/services_page_pics/ups_services_image2.webp",
+			alt: "UPS battery replacement service",
+			icon: <Battery className="h-8 w-8" />,
+		},
+		{
+			id: 3,
+			title: "UPS Maintenance & Repair",
+			description:
+				"Comprehensive maintenance and repair services for all UPS systems. Keep your backup power solution running efficiently with regular professional care and quick repairs.",
+			features: [
+				"Preventive maintenance",
+				"Component repair",
+				"System diagnostics",
+				"Emergency repairs",
+			],
+			image: "/services_page_pics/ups_services_image3.jpeg",
+			alt: "UPS maintenance and repair service",
+			icon: <Wrench className="h-8 w-8" />,
+		},
+		{
+			id: 4,
+			title: "Commercial UPS Solutions",
+			description:
+				"Industrial-grade UPS systems for businesses and commercial properties. High-capacity backup power solutions for servers, data centers, and critical equipment.",
+			features: [
+				"Custom solutions",
+				"Scalable systems",
+				"Monitoring integration",
+				"Service contracts",
+			],
+			image: "/services_page_pics/ups_services_image4.jpeg",
+			alt: "Commercial UPS solutions",
+			icon: <Monitor className="h-8 w-8" />,
+		},
+		{
+			id: 5,
+			title: "UPS Components & Accessories",
+			description:
+				"Complete range of UPS components, replacement parts, and accessories. Everything you need to maintain and upgrade your uninterruptible power supply system.",
+			features: [
+				"Genuine parts",
+				"Complete accessories",
+				"Technical support",
+				"Warranty coverage",
+			],
+			image: "/services_page_pics/ups_services_image5.jpeg",
+			alt: "UPS components and accessories",
+			icon: <Cpu className="h-8 w-8" />,
 		},
 	];
 	const gas_services = [
@@ -164,7 +245,6 @@ function Services() {
 			icon: <Thermometer className="h-8 w-8" />,
 		},
 	];
-
 	return (
 		<div className="min-h-screen bg-gradient-to-br from-blue-50 to-cyan-50">
 			{/* Hero Section */}
@@ -487,6 +567,191 @@ function Services() {
 								Call Now
 							</button>
 							<button className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-orange-600 transition-colors duration-200 flex items-center justify-center">
+								<Mail className="h-5 w-5 mr-2" />
+								Email Us
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div className="min-h-screen bg-gradient-to-br from-purple-50 to-indigo-50">
+				{/* Hero Section */}
+				<div className="relative bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-20">
+					<div className="absolute inset-0 bg-black opacity-10"></div>
+					<div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+						<div className="flex justify-center mb-6">
+							<Battery className="h-16 w-16 text-purple-200" />
+						</div>
+						<h1 className="text-5xl font-bold mb-6">Our UPS Services</h1>
+						<p className="text-xl max-w-3xl mx-auto leading-relaxed">
+							Professional UPS solutions for homes and businesses. From
+							installation to maintenance, we ensure your critical systems have
+							reliable backup power with our comprehensive range of
+							uninterruptible power supply services.
+						</p>
+					</div>
+				</div>
+
+				{/* Description Section */}
+				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+					<div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+						<div>
+							<h2 className="text-3xl font-bold text-gray-900 mb-6">
+								Why Choose Our UPS Services?
+							</h2>
+							<p className="text-lg text-gray-700 mb-6">
+								With years of experience in power backup technology, we provide
+								reliable, efficient, and scalable UPS solutions tailored to your
+								specific needs. Our certified technicians ensure every
+								installation and service meets the highest industry standards
+								for critical power protection.
+							</p>
+							<div className="space-y-4">
+								<div className="flex items-center">
+									<Shield className="h-6 w-6 text-purple-600 mr-3" />
+									<span className="text-gray-700">
+										Certified UPS Technicians
+									</span>
+								</div>
+								<div className="flex items-center">
+									<CheckCircle className="h-6 w-6 text-green-600 mr-3" />
+									<span className="text-gray-700">
+										Reliable Power Protection
+									</span>
+								</div>
+								<div className="flex items-center">
+									<Wrench className="h-6 w-6 text-indigo-600 mr-3" />
+									<span className="text-gray-700">24/7 Emergency Support</span>
+								</div>
+							</div>
+						</div>
+						<div className="bg-white rounded-lg shadow-xl p-8">
+							<h3 className="text-2xl font-semibold text-gray-900 mb-4">
+								UPS System Benefits
+							</h3>
+							<ul className="space-y-3 text-gray-700">
+								<li className="flex items-start">
+									<span className="text-purple-600 mr-2">•</span>
+									Instant backup power during outages
+								</li>
+								<li className="flex items-start">
+									<span className="text-purple-600 mr-2">•</span>
+									Protection from power surges and spikes
+								</li>
+								<li className="flex items-start">
+									<span className="text-purple-600 mr-2">•</span>
+									Prevents data loss and equipment damage
+								</li>
+								<li className="flex items-start">
+									<span className="text-purple-600 mr-2">•</span>
+									Maintains business continuity
+								</li>
+								<li className="flex items-start">
+									<span className="text-purple-600 mr-2">•</span>
+									Clean, regulated power supply
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					{/* UPS Services Grid with Images */}
+					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+						{ups_services.map((service) => (
+							<div
+								key={service.id}
+								className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
+							>
+								{/* Service Image */}
+								<div className="relative h-48">
+									<img
+										src={service.image}
+										alt={service.alt}
+										className="object-cover w-full h-full"
+									/>
+									<div className="absolute top-4 left-4">
+										<span className="bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+											UPS Service {service.id}
+										</span>
+									</div>
+									{/* Icon overlay */}
+									<div className="absolute top-4 right-4 bg-white/90 rounded-full p-2">
+										<div className="text-purple-600">{service.icon}</div>
+									</div>
+								</div>
+
+								<div className="p-6">
+									<h3 className="text-xl font-bold text-gray-900 mb-3">
+										{service.title}
+									</h3>
+									<p className="text-gray-600 mb-4 leading-relaxed">
+										{service.description}
+									</p>
+
+									<div className="space-y-2 mb-6">
+										{service.features.map((feature, index) => (
+											<div
+												key={index}
+												className="flex items-center text-sm text-gray-700"
+											>
+												<CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
+												<span>{feature}</span>
+											</div>
+										))}
+									</div>
+
+									<button className="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-3 px-4 rounded-lg font-semibold hover:from-purple-700 hover:to-indigo-700 transition-all duration-200 transform hover:scale-105">
+										Get Quote
+									</button>
+								</div>
+							</div>
+						))}
+					</div>
+
+					{/* Technical Information */}
+					<div className="mt-16 bg-gradient-to-r from-blue-100 to-purple-100 rounded-2xl p-8 border-l-4 border-purple-500">
+						<div className="flex items-center mb-4">
+							<Power className="h-8 w-8 text-purple-600 mr-3" />
+							<h3 className="text-2xl font-bold text-gray-900">
+								Power Protection Expertise
+							</h3>
+						</div>
+						<p className="text-gray-700 mb-4">
+							UPS installation and maintenance require specialized knowledge of
+							electrical systems and power protection. Our technicians are fully
+							certified and follow industry best practices to ensure reliable
+							backup power for your critical equipment.
+						</p>
+						<div className="grid md:grid-cols-3 gap-4 text-sm text-gray-700">
+							<div className="flex items-center">
+								<CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+								<span>Load calculation & sizing</span>
+							</div>
+							<div className="flex items-center">
+								<CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+								<span>Battery health monitoring</span>
+							</div>
+							<div className="flex items-center">
+								<CheckCircle className="h-5 w-5 text-green-500 mr-2" />
+								<span>Power quality analysis</span>
+							</div>
+						</div>
+					</div>
+
+					{/* Call to Action */}
+					<div className="mt-16 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-2xl text-white p-8 text-center">
+						<h2 className="text-3xl font-bold mb-4">
+							Ready for Reliable Backup Power?
+						</h2>
+						<p className="text-xl mb-8 opacity-90">
+							Contact us today for a free consultation and quote on our UPS
+							services.
+						</p>
+						<div className="flex flex-col sm:flex-row gap-4 justify-center">
+							<button className="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 flex items-center justify-center">
+								<Phone className="h-5 w-5 mr-2" />
+								Call Now
+							</button>
+							<button className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition-colors duration-200 flex items-center justify-center">
 								<Mail className="h-5 w-5 mr-2" />
 								Email Us
 							</button>
