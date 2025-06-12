@@ -15,11 +15,11 @@ const Advantages = () => {
 				</div>
 
 				{/* Cards Container */}
-				<div className="relative max-w-7xl mx-auto">
-					<div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+				<div className="relative max-w-5xl mx-auto">
+					<div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
 						{/* Top Left - Purified Clean Water (7.0 pH) */}
-						<div className="bg-white rounded-3xl p-8 text-gray-800 relative shadow-2xl transform hover:scale-105 transition-transform duration-300 border border-gray-200">
-							<div className="absolute top-4 right-4 bg-green-500 text-white px-4 py-2 rounded-lg text-sm font-bold shadow-lg">
+						<div className="bg-white rounded-3xl p-4 text-gray-800 relative shadow-2xl transform hover:scale-105 transition-transform duration-300 border border-gray-200">
+							<div className="absolute top-4 left-20 bg-green-500 text-white px-4 py-2 rounded-lg text-sm font-bold shadow-lg">
 								7.0 pH
 							</div>
 							<div className="absolute top-4 left-4 w-20 h-20 rounded-full overflow-hidden border-2 border-white shadow-lg">
@@ -34,14 +34,14 @@ const Advantages = () => {
 								<h4 className="text-3xl font-bold mb-6 text-center text-gray-800">
 									Purified Clean Water
 								</h4>
-								<ul className="space-y-4 text-lg text-gray-700">
+								<ul className="space-y-1 text-lg text-gray-700 text-center">
 									<li className="flex items-center">
 										<span className="mr-3 text-2xl">💧</span>
 										Three layered water filter
 									</li>
 									<li className="flex items-center">
 										<span className="mr-3 text-2xl">💧</span>
-										Removes chlorine and sediments like rust impurities
+										Removes chlorine and sediments
 									</li>
 									<li className="flex items-center">
 										<span className="mr-3 text-2xl">💧</span>
@@ -53,22 +53,14 @@ const Advantages = () => {
 									</li>
 								</ul>
 							</div>
-
-							<div className="absolute bottom-4 left-4 w-20 h-20 rounded-full overflow-hidden border-2 border-white shadow-lg">
-								<img
-									src="image_baby.jpeg"
-									alt="Baby"
-									className="w-full h-full object-cover"
-								/>
-							</div>
 						</div>
 
 						{/* Top Right - Beauty Water (4.5-6 pH) */}
-						<div className="bg-white rounded-3xl p-8 text-gray-800 relative shadow-2xl transform hover:scale-105 transition-transform duration-300 border border-gray-200">
-							<div className="absolute top-4 right-4 bg-yellow-500 text-white px-4 py-2 rounded-lg text-sm font-bold shadow-lg">
+						<div className="bg-white rounded-3xl p-4 text-gray-800 relative shadow-2xl transform hover:scale-105 transition-transform duration-300 border border-gray-200">
+							<div className="absolute top-4 right-20 bg-yellow-500 text-white px-4 py-2 rounded-lg text-sm font-bold shadow-lg">
 								4.5 - 6 pH
 							</div>
-							<div className="absolute top-4 right-20 w-20 h-20 rounded-full overflow-hidden border-2 border-gray-800 shadow-lg">
+							<div className="absolute top-4 right-4 w-20 h-20 rounded-full overflow-hidden border-2 border-gray-800 shadow-lg">
 								<img
 									src="women_beauty_water.jpeg"
 									alt="Woman"
@@ -80,34 +72,34 @@ const Advantages = () => {
 								<h4 className="text-3xl font-bold mb-6 text-center text-gray-800">
 									Beauty Water
 								</h4>
-								<ul className="space-y-4 text-lg text-gray-700">
-									<li className="flex items-center">
-										<span className="mr-3 text-2xl">💧</span>
-										Skin toner & Astringent
+								<ul className="space-y-1 text-lg text-gray-700 w-full text-right">
+									<li className="flex items-center justify-end">
+										<span>Skin toner & Astringent</span>
+										<span className="ml-3 text-2xl">💧</span>
 									</li>
-									<li className="flex items-center">
-										<span className="mr-3 text-2xl">💧</span>
-										Hair care, Groom pets
+									<li className="flex items-center justify-end">
+										<span>Hair care, Groom pets</span>
+										<span className="ml-3 text-2xl">💧</span>
 									</li>
-									<li className="flex items-center">
-										<span className="mr-3 text-2xl">💧</span>
-										Clean mirrors & glass
+									<li className="flex items-center justify-end">
+										<span>Clean mirrors & glass</span>
+										<span className="ml-3 text-2xl">💧</span>
 									</li>
-									<li className="flex items-center">
-										<span className="mr-3 text-2xl">💧</span>
-										House cleaning - Floor tiles
+									<li className="flex items-center justify-end">
+										<span>House cleaning - Floor tiles</span>
+										<span className="ml-3 text-2xl">💧</span>
 									</li>
-									<li className="flex items-center">
-										<span className="mr-3 text-2xl">💧</span>
-										Great for plants
-									</li>
+									{/* <li className="flex items-center justify-end">
+								  <span>Great for plants</span>
+								  <span className="ml-3 text-2xl">💧</span>
+								</li> */}
 								</ul>
 							</div>
 						</div>
 
 						{/* Bottom Left - Strong Acidic Water (2.5 pH) */}
-						<div className="bg-white rounded-3xl p-8 text-gray-800 relative shadow-2xl transform hover:scale-105 transition-transform duration-300 border border-gray-200">
-							<div className="absolute top-4 right-4 bg-orange-500 text-white px-4 py-2 rounded-lg text-sm font-bold shadow-lg">
+						<div className="bg-white rounded-3xl p-4 text-gray-800 relative shadow-2xl transform hover:scale-105 transition-transform duration-300 border border-gray-200">
+							<div className="absolute top-4 left-20 bg-orange-500 text-white px-4 py-2 rounded-lg text-sm font-bold shadow-lg">
 								2.5 pH
 							</div>
 							<div className="absolute top-4 left-4 w-20 h-20 rounded-full overflow-hidden border-2 border-white shadow-lg">
@@ -122,7 +114,7 @@ const Advantages = () => {
 								<h4 className="text-3xl font-bold mb-6 text-center text-gray-800">
 									Strong Acidic Water
 								</h4>
-								<ul className="space-y-3 text-lg text-gray-700">
+								<ul className="space-y-1 text-lg text-gray-700">
 									<li className="flex items-center">
 										<span className="mr-3 text-2xl">💧</span>
 										Disinfectant
@@ -130,10 +122,6 @@ const Advantages = () => {
 									<li className="flex items-center">
 										<span className="mr-3 text-2xl">💧</span>
 										Electrolyzed Hypochlorous Acid
-									</li>
-									<li className="flex items-center">
-										<span className="mr-3 text-2xl">💧</span>
-										Kills virus and bacteria
 									</li>
 									<li className="flex items-center">
 										<span className="mr-3 text-2xl">💧</span>
@@ -152,11 +140,11 @@ const Advantages = () => {
 						</div>
 
 						{/* Bottom Right - Strong Kangen Water (11.5 pH) */}
-						<div className="bg-white rounded-3xl p-8 text-gray-800 relative shadow-2xl transform hover:scale-105 transition-transform duration-300 border border-gray-200">
-							<div className="absolute top-4 right-4 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-bold shadow-lg">
+						<div className="bg-white rounded-3xl p-4 text-gray-800 relative shadow-2xl transform hover:scale-105 transition-transform duration-300 border border-gray-200">
+							<div className="absolute top-4 right-20 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-bold shadow-lg">
 								11.5 pH
 							</div>
-							<div className="absolute top-4 right-20 w-20 h-20 rounded-full overflow-hidden border-2 border-white shadow-lg">
+							<div className="absolute top-4 right-4 w-20 h-20 rounded-full overflow-hidden border-2 border-white shadow-lg">
 								<img
 									src="vegetable_image1.jpeg"
 									alt="Kitchen scene"
@@ -168,39 +156,31 @@ const Advantages = () => {
 								<h4 className="text-3xl font-bold mb-6 text-center text-gray-800">
 									Strong Kangen Water
 								</h4>
-								<ul className="space-y-4 text-lg text-gray-700">
-									<li className="flex items-center">
-										<span className="mr-3 text-2xl">💧</span>
-										Oil Emulsifier
+								<ul className="space-y-1 text-lg text-gray-700 w-full text-right">
+									<li className="flex items-center justify-end">
+										<span>Oil Emulsifier</span>
+										<span className="ml-3 text-2xl">💧</span>
 									</li>
-									<li className="flex items-center">
-										<span className="mr-3 text-2xl">💧</span>
-										Removes pesticides and chemicals
+									<li className="flex items-center justify-end">
+										<span>Removes pesticides and chemicals</span>
+										<span className="ml-3 text-2xl">💧</span>
 									</li>
-									<li className="flex items-center">
-										<span className="mr-3 text-2xl">💧</span>
-										From grains, fruits and vegetables
+									<li className="flex items-center justify-end">
+										<span>From grains, fruits and vegetables</span>
+										<span className="ml-3 text-2xl">💧</span>
 									</li>
-									<li className="flex items-center">
-										<span className="mr-3 text-2xl">💧</span>
-										Cleans greasy pots, pans, laundry
+									<li className="flex items-center justify-end">
+										<span>Cleans greasy pots, pans, laundry</span>
+										<span className="ml-3 text-2xl">💧</span>
 									</li>
 								</ul>
-							</div>
-
-							<div className="absolute bottom-4 right-4 w-20 h-20 rounded-full overflow-hidden border-2 border-white shadow-lg">
-								<img
-									src="fruits_image.jpeg"
-									alt="Vegetables"
-									className="w-full h-full object-cover"
-								/>
 							</div>
 						</div>
 					</div>
 
 					{/* Central Image - Water Delivery Professional */}
 					<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 hidden lg:block">
-						<div className="w-80 h-80 rounded-full overflow-hidden border-8 border-white shadow-2xl">
+						<div className="w-70 h-70 rounded-full overflow-hidden border-8 border-white shadow-2xl">
 							<img
 								src="product4.webp"
 								alt="Water delivery professional"
