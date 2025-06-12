@@ -8,6 +8,10 @@ import {
 	CheckCircle,
 	Phone,
 	Mail,
+	Flame,
+	Settings,
+	Zap,
+	Thermometer,
 } from "lucide-react";
 
 function Services() {
