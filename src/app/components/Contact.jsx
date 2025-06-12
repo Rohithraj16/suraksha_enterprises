@@ -68,8 +68,21 @@ export default function Contact() {
 									<p className="font-bold">Phone</p>
 									<p>+91 9449666606</p>
 								</div>
+								<div>
+									<div className="relative">
+										<Image
+											src="/logo_suraksha.jpg"
+											alt="Suraksha Logo"
+											width={250}
+											height={250}
+											className="rounded-lg"
+										/>
+									</div>
+								</div>
 							</div>
 						</div>
+
+						{/* */}
 
 						{/* Contact Form */}
 						<div className="bg-white p-8 rounded-lg shadow">
