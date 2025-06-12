@@ -164,6 +164,7 @@ function Services() {
 			icon: <Thermometer className="h-8 w-8" />,
 		},
 	];
+
 	return (
 		<div className="min-h-screen bg-gradient-to-br from-blue-50 to-cyan-50">
 			{/* Hero Section */}
@@ -248,10 +249,13 @@ function Services() {
 							key={service.id}
 							className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
 						>
-							<div className="relative h-48 bg-gradient-to-br from-blue-100 to-cyan-100">
-								<div className="absolute inset-0 flex items-center justify-center">
-									<Droplets className="h-16 w-16 text-blue-500 opacity-20" />
-								</div>
+							{/* Service Image */}
+							<div className="relative h-48">
+								<img
+									src={service.image}
+									alt={service.alt}
+									className="object-cover w-full h-full"
+								/>
 								<div className="absolute top-4 left-4">
 									<span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
 										Service {service.id}
@@ -388,33 +392,35 @@ function Services() {
 						</div>
 					</div>
 
-					{/* Services Grid */}
+					{/* Gas Services Grid with Images */}
 					<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 						{gas_services.map((service) => (
 							<div
 								key={service.id}
-								className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border-t-4 border-orange-500 hover:border-red-600"
+								className="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
 							>
-								<div className="relative h-48 bg-gradient-to-br from-orange-100 to-red-100">
-									<div className="absolute inset-0 flex items-center justify-center">
-										<div className="text-orange-500 opacity-20">
-											<Flame className="h-16 w-16" />
-										</div>
-									</div>
+								{/* Service Image */}
+								<div className="relative h-48">
+									<img
+										src={service.image}
+										alt={service.alt}
+										className="object-cover w-full h-full"
+									/>
 									<div className="absolute top-4 left-4">
 										<span className="bg-orange-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
-											Gas Service
+											Gas Service {service.id}
 										</span>
+									</div>
+									{/* Icon overlay */}
+									<div className="absolute top-4 right-4 bg-white/90 rounded-full p-2">
+										<div className="text-orange-600">{service.icon}</div>
 									</div>
 								</div>
 
 								<div className="p-6">
-									<div className="flex items-center mb-3">
-										<div className="text-orange-600 mr-3">{service.icon}</div>
-										<h3 className="text-xl font-bold text-gray-900">
-											{service.title}
-										</h3>
-									</div>
+									<h3 className="text-xl font-bold text-gray-900 mb-3">
+										{service.title}
+									</h3>
 									<p className="text-gray-600 mb-4 leading-relaxed">
 										{service.description}
 									</p>
