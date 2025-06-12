@@ -165,7 +165,7 @@ function Products() {
 									{/* Price only */}
 									<div className="flex items-center justify-between">
 										<div className="text-2xl font-bold text-cyan-500">
-											₹{product.price.toLocaleString()}
+											₹{product.price.toLocaleString("en-IN")}
 										</div>
 									</div>
 								</div>
