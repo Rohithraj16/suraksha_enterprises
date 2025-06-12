@@ -151,8 +151,9 @@ const Navbar = () => {
 
 						{/* Brochure CTA Button */}
 						<div className="ml-4 pl-4 border-l border-gray-200">
-							<Link
-								href="/brochure"
+							<a
+								href="/brochure_suraksha.pdf"
+								download
 								className="inline-flex items-center px-6 py-2.5 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white text-sm font-semibold rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 group"
 							>
 								<span className="flex items-center space-x-2">
@@ -171,7 +172,7 @@ const Navbar = () => {
 										/>
 									</svg>
 								</span>
-							</Link>
+							</a>
 						</div>
 					</div>
 
