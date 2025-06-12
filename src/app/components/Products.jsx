@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { ShoppingCart, Star } from "lucide-react";
+
 function Products() {
 	const [hoveredProduct, setHoveredProduct] = useState(null);
 	const products = [
@@ -96,7 +97,7 @@ function Products() {
 					</div>
 
 					{/* Products Grid */}
-					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
 						{products.map((product) => (
 							<div
 								key={product.id}

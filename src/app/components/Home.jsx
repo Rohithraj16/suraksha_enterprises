@@ -8,7 +8,7 @@ import Products from "./Products";
 
 const Home = () => {
 	return (
-		<div className="relative py-4 overflow-hidden mt-20 bg-[#75D0F1]">
+		<div className="relative py-0 overflow-hidden mt-20 bg-[#75D0F1]">
 			{/* Top Wave Shape */}
 			<div className="absolute top-0 left-0 w-full overflow-hidden">
 				<svg
@@ -77,7 +77,7 @@ const Home = () => {
 							height={500}
 							className="object-contain "
 							style={{
-								filter: "brightness(1.05) drop-shadow(0 -20px 30px white)",
+								filter: "brightness(1.05) drop-shadow(0 -30px 100px white)",
 							}}
 							priority
 						/>
@@ -86,7 +86,7 @@ const Home = () => {
 			</div>
 
 			{/* Features Section */}
-			<div className="min-h-screen bg-gradient-to-br from-blue-50 to-cyan-50 py-12 px-4 shadow-grey-400 shadow-lg max-w-4/5 justify-center mx-auto mt-8 mb-8 rounded-2xl">
+			<div className=" bg-gradient-to-br from-blue-50 to-cyan-50 py-12 px-4 shadow-grey-400 shadow-lg max-w-4/5 justify-center mx-auto mt-8 mb-8 rounded-2xl">
 				<div className="container mx-auto px-4">
 					<div className="text-center mb-12">
 						<h2 className="text-4xl font-bold text-gray-900 mb-4">
