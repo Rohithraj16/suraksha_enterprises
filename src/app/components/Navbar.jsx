@@ -3,8 +3,10 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useLoading } from "./LoadingScreen";
 
 const Navbar = () => {
+	const { showLoading } = useLoading();
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [isScrolled, setIsScrolled] = useState(false);
 	const [activeDropdown, setActiveDropdown] = useState(null);
@@ -36,6 +38,12 @@ const Navbar = () => {
 	// Check if current path matches link
 	const isActive = (path) => pathname === path;
 
+	const handleNavLinkClick = (isBrochure) => {
+		if (!isBrochure) {
+			showLoading();
+		}
+	};
+
 	const navItems = [
 		{ href: "/", label: "Home", hasDropdown: false },
 		{ href: "/about", label: "About", hasDropdown: false },
@@ -56,6 +64,7 @@ const Navbar = () => {
 					<div className="flex-shrink-0 flex items-center">
 						<Link
 							href="/"
+							onClick={() => handleNavLinkClick(false)}
 							className="flex items-center space-x-3 transition-transform duration-200 hover:scale-105"
 						>
 							<div className="relative">
@@ -128,6 +137,7 @@ const Navbar = () => {
 								) : (
 									<Link
 										href={item.href}
+										onClick={() => handleNavLinkClick(false)}
 										className={`px-4 py-2 text-base font-semibold transition-all duration-200 rounded-md ${
 											isActive(item.href)
 												? "text-cyan-500"
@@ -145,6 +155,7 @@ const Navbar = () => {
 							<a
 								href="/brochure_suraksha.pdf"
 								download
+								onClick={() => handleNavLinkClick(true)}
 								className="inline-flex items-center px-6 py-2.5 bg-gradient-to-r from-cyan-500 to-cyan-600 text-white text-sm font-semibold rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 group"
 							>
 								<span className="flex items-center space-x-2">
@@ -260,12 +271,15 @@ const Navbar = () => {
 								) : (
 									<Link
 										href={item.href}
+										onClick={() => {
+											handleNavLinkClick(false);
+											closeMenu();
+										}}
 										className={`block px-4 py-3 text-base font-semibold rounded-lg transition-all duration-200 ${
 											isActive(item.href)
 												? "text-cyan-500 bg-cyan-50"
 												: "text-gray-700 hover:text-cyan-500 hover:bg-gray-50"
 										}`}
-										onClick={closeMenu}
 									>
 										{item.label}
 									</Link>

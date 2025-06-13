@@ -173,7 +173,7 @@ const Home = () => {
 																: "from-red-500 to-red-600"
 														}`}
 													>
-														<Icon className="text-white" size={20} />
+														<Icon className="text-white " size={20} />
 													</div>
 													<span className={`font-semibold ${feature.color}`}>
 														{feature.text}

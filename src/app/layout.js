@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import FormspreeWrapper from "./providers/FormspreeWrapper";
+import LoadingScreen from "./components/LoadingScreen";
 
 const geistSans = Geist({
 	variable: "--font-geist-sans",
@@ -26,9 +27,11 @@ export default function RootLayout({ children }) {
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
 				<FormspreeWrapper>
-					{" "}
-					<Navbar />
-					{children}
+					<LoadingScreen>
+						{" "}
+						<Navbar />
+						{children}
+					</LoadingScreen>
 					<Footer />
 				</FormspreeWrapper>
 			</body>
