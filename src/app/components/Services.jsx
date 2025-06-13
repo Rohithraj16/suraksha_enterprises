@@ -381,14 +381,23 @@ function Services() {
 						filter services.
 					</p>
 					<div className="flex flex-col sm:flex-row gap-4 justify-center">
-						<button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 flex items-center justify-center">
+						{/* Call Button */}
+						<a
+							href="tel:+919449666606"
+							className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 flex items-center justify-center"
+						>
 							<Phone className="h-5 w-5 mr-2" />
 							Call Now
-						</button>
-						<button className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-200 flex items-center justify-center">
+						</a>
+
+						{/* Email Button */}
+						<a
+							href="mailto:Surakshaenterprises@gmail.com"
+							className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-200 flex items-center justify-center"
+						>
 							<Mail className="h-5 w-5 mr-2" />
 							Email Us
-						</button>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -562,14 +571,23 @@ function Services() {
 							geyser services.
 						</p>
 						<div className="flex flex-col sm:flex-row gap-4 justify-center">
-							<button className="bg-white text-orange-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 flex items-center justify-center">
+							{/* Call Button */}
+							<a
+								href="tel:+919449666606"
+								className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 flex items-center justify-center"
+							>
 								<Phone className="h-5 w-5 mr-2" />
 								Call Now
-							</button>
-							<button className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-orange-600 transition-colors duration-200 flex items-center justify-center">
+							</a>
+
+							{/* Email Button */}
+							<a
+								href="mailto:Surakshaenterprises@gmail.com"
+								className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-200 flex items-center justify-center"
+							>
 								<Mail className="h-5 w-5 mr-2" />
 								Email Us
-							</button>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -747,14 +765,23 @@ function Services() {
 							services.
 						</p>
 						<div className="flex flex-col sm:flex-row gap-4 justify-center">
-							<button className="bg-white text-purple-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 flex items-center justify-center">
+							{/* Call Button */}
+							<a
+								href="tel:+919449666606"
+								className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 flex items-center justify-center"
+							>
 								<Phone className="h-5 w-5 mr-2" />
 								Call Now
-							</button>
-							<button className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition-colors duration-200 flex items-center justify-center">
+							</a>
+
+							{/* Email Button */}
+							<a
+								href="mailto:Surakshaenterprises@gmail.com"
+								className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-200 flex items-center justify-center"
+							>
 								<Mail className="h-5 w-5 mr-2" />
 								Email Us
-							</button>
+							</a>
 						</div>
 					</div>
 				</div>

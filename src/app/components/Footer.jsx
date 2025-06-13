@@ -34,10 +34,13 @@ const Footer = () => {
 						Please <span className="text-cyan-400">Call Us</span> to Take an
 						Extraordinary Service
 					</h2>
-					<button className="bg-cyan-400 hover:bg-cyan-500 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+					<a
+						href="tel:9449666606"
+						className="bg-cyan-400 hover:bg-cyan-500 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg inline-flex items-center"
+					>
 						<Phone className="inline-block w-5 h-5 mr-2" />
 						+91 9449666606
-					</button>
+					</a>
 				</div>
 			</section>
 
