@@ -1,7 +1,11 @@
 "use client";
 import Image from "next/image";
 
+import { useForm, ValidationError } from "@formspree/react";
+
 export default function Contact() {
+	const [state, handleSubmit] = useForm("mpwrdbkr");
+
 	return (
 		<>
 			<div className="relative w-full h-[450px] mt-20 bg-white">
@@ -82,48 +86,116 @@ export default function Contact() {
 							</div>
 						</div>
 
-						{/* */}
-
 						{/* Contact Form */}
-						<div className="bg-white p-8 rounded-lg shadow">
-							<h2 className="text-3xl font-semibold mb-6 text-black">
+						<div className="bg-white p-8 rounded-2xl shadow-lg max-w-xl mx-auto">
+							<h2 className="text-3xl font-bold mb-6 text-gray-800 text-center">
 								Leave a Comment
 							</h2>
-							<form className="space-y-4">
-								<input
-									type="text"
-									placeholder="Your Name"
-									className="w-full p-3 rounded bg-gray-100 text-black border border-gray-300"
-									required
-								/>
-								<input
-									type="email"
-									placeholder="Email Address"
-									className="w-full p-3 rounded bg-gray-100 text-black border border-gray-300"
-									required
-								/>
-								<input
-									type="text"
-									placeholder="Phone Number"
-									className="w-full p-3 rounded bg-gray-100 text-black border border-gray-300"
-								/>
-								<input
-									type="text"
-									placeholder="Subject"
-									className="w-full p-3 rounded bg-gray-100 text-black border border-gray-300"
-								/>
-								<textarea
-									rows="5"
-									placeholder="Leave a Comment"
-									className="w-full p-3 rounded bg-gray-100 text-black border border-gray-300"
-								/>
-								<button
-									type="submit"
-									className="px-6 py-3 bg-black hover:bg-gray-800 rounded text-white font-medium"
-								>
-									Submit Now
-								</button>
+
+							<form onSubmit={handleSubmit} className="space-y-6">
+								{/* Email */}
+								<div>
+									<label
+										htmlFor="email"
+										className="block text-sm font-medium text-gray-700 mb-1"
+									>
+										Email Address
+									</label>
+									<input
+										id="email"
+										type="email"
+										name="email"
+										required
+										className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-cyan-500"
+									/>
+									<ValidationError
+										prefix="Email"
+										field="email"
+										errors={state.errors}
+									/>
+								</div>
+
+								{/* Phone */}
+								<div>
+									<label
+										htmlFor="phone"
+										className="block text-sm font-medium text-gray-700 mb-1"
+									>
+										Phone Number
+									</label>
+									<input
+										id="phone"
+										type="text"
+										name="phone"
+										placeholder="+91 XXXXX XXXXX"
+										className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-cyan-500 text-black"
+									/>
+									<ValidationError
+										prefix="Phone"
+										field="phone"
+										errors={state.errors}
+									/>
+								</div>
+
+								{/* Subject */}
+								<div>
+									<label
+										htmlFor="subject"
+										className="block text-sm font-medium text-gray-700 mb-1"
+									>
+										Subject
+									</label>
+									<input
+										id="subject"
+										type="text"
+										name="subject"
+										placeholder="Subject of your message"
+										className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-cyan-500 text-black"
+									/>
+									<ValidationError
+										prefix="Subject"
+										field="subject"
+										errors={state.errors}
+									/>
+								</div>
+
+								{/* Message */}
+								<div>
+									<label
+										htmlFor="message"
+										className="block text-sm font-medium text-gray-700 mb-1"
+									>
+										Message
+									</label>
+									<textarea
+										id="message"
+										name="message"
+										rows="5"
+										required
+										className="w-full px-4 py-3 rounded-lg border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-cyan-500 text-black"
+									/>
+									<ValidationError
+										prefix="Message"
+										field="message"
+										errors={state.errors}
+									/>
+								</div>
+
+								<div className="text-center">
+									<button
+										type="submit"
+										disabled={state.submitting}
+										className="w-full sm:w-auto px-6 py-3 bg-cyan-600 hover:bg-cyan-700 text-white rounded-lg font-semibold transition duration-200 disabled:opacity-50"
+									>
+										{state.submitting ? "Submitting..." : "Submit"}
+									</button>
+								</div>
 							</form>
+							{state.succeeded && (
+								<div className="text-green-600 font-semibold mb-4 text-center">
+									✅ Thank you! Your message has been sent.
+								</div>
+							)}
 						</div>
 					</div>
 				</div>
