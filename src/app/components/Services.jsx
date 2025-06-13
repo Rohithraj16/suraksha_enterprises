@@ -248,7 +248,7 @@ function Services() {
 	return (
 		<div className="min-h-screen bg-gradient-to-br from-blue-50 to-cyan-50">
 			{/* Hero Section */}
-			<div className="relative bg-gradient-to-r from-blue-600 to-cyan-600 text-white py-20">
+			<div className="relative bg-gradient-to-r from-blue-600 to-cyan-600 text-white py-20 mt-10">
 				<div className="absolute inset-0 bg-black opacity-10"></div>
 				<div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 					<div className="flex justify-center mb-6">
