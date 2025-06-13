@@ -39,17 +39,8 @@ const Navbar = () => {
 	const navItems = [
 		{ href: "/", label: "Home", hasDropdown: false },
 		{ href: "/about", label: "About", hasDropdown: false },
-		{
-			href: "/services",
-			label: "Services",
-			hasDropdown: true,
-			dropdownItems: [
-				{ href: "/services", label: "All Services" },
-				{ href: "/services/security", label: "Security Services" },
-				{ href: "/services/consulting", label: "Consulting" },
-				{ href: "/services/maintenance", label: "Maintenance" },
-			],
-		},
+		{ href: "/services", label: "Services", hasDropdown: false },
+
 		{ href: "/contact", label: "Contact Us", hasDropdown: false },
 	];
 
