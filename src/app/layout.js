@@ -28,11 +28,9 @@ export default function RootLayout({ children }) {
 			>
 				<FormspreeWrapper>
 					<LoadingScreen>
-						{" "}
-						<Navbar />
-						{children}
+						<Navbar /> {children}
+						<Footer />
 					</LoadingScreen>
-					<Footer />
 				</FormspreeWrapper>
 			</body>
 		</html>

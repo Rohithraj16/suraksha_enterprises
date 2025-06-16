@@ -24,7 +24,7 @@ const Footer = () => {
 					>
 						<path
 							d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-							fill="white"
+							fill="#F4FFFF"
 						/>
 					</svg>
 				</div>
@@ -45,8 +45,8 @@ const Footer = () => {
 			</section>
 
 			{/* Main Footer */}
-			<footer className="bg-blue-900 text-white py-16">
-				<div className="container mx-auto px-4">
+			<footer className="bg-blue-900 text-white py-12 footerMainContainer">
+				<div className="container mx-auto px-8">
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 						{/* Company Info */}
 						<div className="space-y-6">
@@ -106,7 +106,7 @@ const Footer = () => {
 								</li>
 								<li>
 									<a
-										href="#"
+										href="/services"
 										className="hover:text-cyan-400 transition-colors duration-300"
 									>
 										Services
@@ -114,16 +114,7 @@ const Footer = () => {
 								</li>
 								<li>
 									<a
-										href="#"
-										className="hover:text-cyan-400 transition-colors duration-300"
-									>
-										How it Works
-									</a>
-								</li>
-
-								<li>
-									<a
-										href="#"
+										href="/contact"
 										className="hover:text-cyan-400 transition-colors duration-300"
 									>
 										Contact Us
@@ -145,7 +136,7 @@ const Footer = () => {
 								<input
 									type="email"
 									placeholder="Your Email"
-									className="flex-1 px-4 py-3 rounded-l-full bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+									className="flex-1 px-4 py-3 rounded-l-full bg-white text-gray-800 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-400 max-w-3/4"
 								/>
 								<button className="bg-cyan-400 hover:bg-cyan-500 px-6 rounded-r-full transition-colors duration-300">
 									<Mail className="w-5 h-5" />

@@ -38,8 +38,13 @@ const Navbar = () => {
 	// Check if current path matches link
 	const isActive = (path) => pathname === path;
 
-	const handleNavLinkClick = (isBrochure) => {
+	const handleNavLinkClick = (isBrochure, e) => {
 		if (!isBrochure) {
+			showLoading();
+		}
+		const href = e.currentTarget.getAttribute("href");
+		// Don't trigger loading for same page or anchor links
+		if (href && !href.startsWith("#") && href !== pathname) {
 			showLoading();
 		}
 	};
@@ -71,8 +76,8 @@ const Navbar = () => {
 								<Image
 									src="/logo_suraksha.jpg"
 									alt="Suraksha Logo"
-									width={80}
-									height={80}
+									width={70}
+									height={70}
 									className="rounded-lg"
 								/>
 							</div>

@@ -2,20 +2,10 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 
-import {
-	Droplets,
-	Zap,
-	Shield,
-	Heart,
-	ArrowRight,
-	Play,
-	ShieldCheck,
-	Scale,
-	Recycle,
-	Droplet,
-} from "lucide-react";
+import { Droplets, Zap, Shield, Heart, ArrowRight, Play } from "lucide-react";
 import Advantages from "./Advantages";
 import Products from "./Products";
+import Features from "./Features";
 
 const Home = () => {
 	const [isVisible, setIsVisible] = useState(false);
@@ -30,9 +20,24 @@ const Home = () => {
 	}, []);
 
 	const features = [
-		{ icon: Droplets, text: "Pure H2O", color: "text-blue-500" },
-		{ icon: Shield, text: "99.9% Filtered", color: "text-green-500" },
-		{ icon: Heart, text: "Health First", color: "text-red-500" },
+		{
+			icon: Droplets,
+			text: "Pure H2O",
+			color: "text-blue-500",
+			iconColor: "bg-blue-500",
+		},
+		{
+			icon: Shield,
+			text: "99.9% Filtered",
+			color: "text-green-500",
+			iconColor: "bg-green-500",
+		},
+		{
+			icon: Heart,
+			text: "Health First",
+			color: "text-red-500",
+			iconColor: "bg-red-500",
+		},
 	];
 
 	const stats = [
@@ -43,27 +48,13 @@ const Home = () => {
 	];
 
 	return (
-		<div className="relative py-0 overflow-hidden mt-20 bg-[#75D0F1]">
-			{/* Top Wave Shape */}
-			<div className="absolute top-0 left-0 w-full overflow-hidden">
-				<svg
-					className="relative block w-full h-16 md:h-20"
-					viewBox="0 0 1200 120"
-					preserveAspectRatio="none"
-				>
-					<path
-						d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-						fill="white" //color #1B3A99
-					/>
-				</svg>
-			</div>
-
+		<div className="mainContainer relative py-0 overflow-hidden mt-10 bg-[#75D0F1]">
 			{/* Content with padding-top to accommodate the wave */}
-			<div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-cyan-50 relative overflow-hidden">
+			<div className=" bg-gradient-to-br from-blue-50 via-white to-cyan-50 relative overflow-hidden w-full">
 				{/* Enhanced Animated Background Elements */}
 				<div className="absolute inset-0 overflow-hidden">
 					{/* Multiple floating bubbles */}
-					<div className="absolute top-20 left-10 w-32 h-32 bg-blue-200 rounded-full opacity-20 animate-pulse"></div>
+					<div className="absolute top-20 left-10 w-32 h-32 bg-blue-200 rounded-full opacity-15 animate-pulse"></div>
 					<div className="absolute top-40 right-20 w-24 h-24 bg-cyan-200 rounded-full opacity-30 animate-bounce"></div>
 					<div className="absolute bottom-20 left-1/4 w-40 h-40 bg-blue-100 rounded-full opacity-25 animate-pulse delay-1000"></div>
 
@@ -105,10 +96,10 @@ const Home = () => {
 				</div>
 
 				<div className="container mx-auto px-4 pt-8 pb-16 relative z-10">
-					<div className="flex flex-col items-center justify-center min-h-screen space-y-8">
+					<div className="flex flex-col lg:flex-row items-center justify-center min-h-screen space-y-8">
 						{/* Left Content */}
 						<div
-							className={`w-full lg:w-1/2 space-y-8 transform transition-all duration-1000 ${
+							className={`w-full lg:w-1/2 lg:scale-80 space-y-8 transform transition-all duration-1000 ${
 								isVisible
 									? "translate-x-0 opacity-100"
 									: "-translate-x-10 opacity-0"
@@ -117,19 +108,19 @@ const Home = () => {
 							{/* Brand Header with Original Images */}
 							<div className="text-center lg:text-left">
 								<div className="flex flex-col items-center lg:items-start space-y-2">
-									<div className="relative">
-										<img
-											src="/kengen_images/Kengen_Title.png"
-											alt="Kengen Title"
-											className="w-80 h-auto object-contain filter drop-shadow-lg"
-										/>
-										<div className="absolute -top-2 -right-4 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center animate-bounce">
-											<Droplets className="text-white" size={16} />
+									<div className="relative flex flex-col">
+										<div>
+											<img
+												src="/kengen_images/Kengen_Title.png"
+												alt="Kengen Title"
+												className="w-80 h-auto object-contain filter drop-shadow-lg"
+											/>
+											<div className="absolute -top-2 -right-4 w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center animate-bounce">
+												<Droplets className="text-white" size={16} />
+											</div>
 										</div>
-									</div>
-									<div className="text-right w-full">
 										<h2
-											className="text-4xl font-bold text-gray-800"
+											className="text-2xl font-bold text-gray-800 inline-block self-end"
 											style={{ fontFamily: "Lavishly Yours, cursive" }}
 										>
 											Waters
@@ -165,15 +156,9 @@ const Home = () => {
 													}`}
 												>
 													<div
-														className={`p-2 rounded-full bg-gradient-to-r ${
-															currentFeature === 0
-																? "from-blue-500 to-blue-600"
-																: currentFeature === 1
-																? "from-green-500 to-green-600"
-																: "from-red-500 to-red-600"
-														}`}
+														className={`p-2 rounded-full ${feature.iconColor}`}
 													>
-														<Icon className="text-white " size={20} />
+														<Icon className={`text-white `} size={20} />
 													</div>
 													<span className={`font-semibold ${feature.color}`}>
 														{feature.text}
@@ -338,7 +323,7 @@ const Home = () => {
 
 						{/* Right Content - Desktop Image - Hidden on mobile */}
 						<div
-							className={`hidden lg:flex w-full lg:w-1/2 justify-center mt-8 lg:mt-0 transform transition-all duration-1000 delay-300 ${
+							className={`hidden lg:flex w-full lg:w-1/2 justify-center transform transition-all duration-1000 delay-300 ${
 								isVisible
 									? "translate-x-0 opacity-100"
 									: "translate-x-10 opacity-0"
@@ -401,14 +386,13 @@ const Home = () => {
 									<div className="relative">
 										{/* Enhanced backdrop for image */}
 										<div className="absolute inset-0 bg-gradient-to-br from-blue-200 via-white to-cyan-200 rounded-full opacity-30 transform scale-110 animate-pulse"></div>
-
 										<img
 											src="/waterborn_fig.png"
 											alt="Waterborn Figure in Motion"
-											className="relative z-10 w-80 h-auto lg:w-96 object-contain transform hover:scale-110 transition-all duration-700"
+											className="relative z-10 w-85 h-auto lg:w-96 object-contain transform hover:scale-103 transition-all duration-700 lg:bottom-18"
 											style={{
 												filter:
-													"brightness(1.1) contrast(1.1) drop-shadow(0 0 50px rgba(59, 130, 246, 0.6)) drop-shadow(0 0 100px rgba(6, 182, 212, 0.4)) drop-shadow(0 -20px 60px rgba(255, 255, 255, 0.8))",
+													"brightness(1.1) contrast(1.1) drop-shadow(10px 10px 20px white)",
 												maxWidth: "400px",
 											}}
 										/>
@@ -464,77 +448,9 @@ const Home = () => {
 					@import url("https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap");
 				`}</style>
 			</div>
-
-			{/* Features Section */}
-			<div className=" bg-gradient-to-br from-blue-50 to-cyan-50 py-12 px-4 shadow-grey-400 shadow-lg max-w-4/5 justify-center mx-auto mt-8 mb-8 rounded-2xl">
-				<div className="container mx-auto px-4">
-					<div className="text-center mb-12">
-						<h2 className="text-4xl font-bold text-gray-900 mb-4">
-							A Trusted Name In
-							<br />
-							Bottled Water Industry
-						</h2>
-					</div>
-
-					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-						{/* Feature 1 */}
-						<div className="text-center group hover:shadow-lg hover:bg-gray-50 rounded-lg p-6 transition-all duration-300 leading-tight">
-							<div className="flex justify-center mb-4">
-								<ShieldCheck className="text-gray-700 w-12 h-12 transform transition-transform duration-300 group-hover:scale-110" />
-							</div>
-							<h3 className="text-xl font-semibold text-gray-900 mb-3">
-								Antioxidizing
-							</h3>
-							<p className="text-gray-600">
-								Ionized water, rich in active hydrogen, neutralizes free
-								radicals, boosts energy, and helps reduce signs of aging.
-							</p>
-						</div>
-
-						{/* Feature 2 */}
-						<div className="text-center group hover:shadow-lg hover:bg-gray-50 rounded-lg p-6 transition-all duration-300 leading-tight">
-							<div className="flex justify-center mb-4 transform transition-transform duration-300 group-hover:scale-110">
-								<Scale className="text-gray-700 w-12 h-12" />
-							</div>
-							<h3 className="text-xl font-semibold text-gray-900 mb-3">
-								Alkalizing
-							</h3>
-							<p className="text-gray-600">
-								With a pH of 8.5–9.5, this water supports a healthy pH balance,
-								counteracts acidic foods, and promotes overall well-being.
-							</p>
-						</div>
-
-						{/* Feature 3 */}
-						<div className="text-center group hover:shadow-lg hover:bg-gray-50 rounded-lg p-6 transition-all duration-300 leading-tight">
-							<div className="flex justify-center mb-4 transform transition-transform duration-300 group-hover:scale-110">
-								<Recycle className="text-gray-700 w-12 h-12" />
-							</div>
-							<h3 className="text-xl font-semibold text-gray-900 mb-3">
-								Detoxifying
-							</h3>
-							<p className="text-gray-600">
-								Helps flush out acid waste and toxins, supporting colon detox,
-								improved digestion, and faster hydration.
-							</p>
-						</div>
-
-						{/* Feature 4 */}
-						<div className="text-center group hover:shadow-lg hover:bg-gray-50 rounded-lg p-6 transition-all duration-300 leading-tight">
-							<div className="flex justify-center mb-4 transform transition-transform duration-300 group-hover:scale-110">
-								<Droplet className="text-gray-700 w-12 h-12" />
-							</div>
-							<h3 className="text-xl font-semibold text-gray-900 mb-3">
-								Hydrating
-							</h3>
-							<p className="text-gray-600">
-								Provides superior hydration through micro-clustered water,
-								enhancing cellular absorption and nutrient uptake.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
+			{/* Features section  */}
+			<Features isVisible={isVisible} />
+			{/* Kenger water filter image */}
 			{/* Kenger water filter advantages */}
 			<Advantages />
 			{/* Kenger Main products*/}
