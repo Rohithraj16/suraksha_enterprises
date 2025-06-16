@@ -15,7 +15,7 @@ import {
 export default function About() {
 	return (
 		<>
-			<div className="relative w-full h-[450px] mt-20 bg-white">
+			<div className="relative w-full h-[200px] sm:h-[400px] md:h-[450px] mt-20 bg-white">
 				<div className="absolute -top-1 left-0 w-full overflow-hidden leading-none z-10">
 					<svg
 						viewBox="0 0 1200 120"
