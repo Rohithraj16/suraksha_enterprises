@@ -8,7 +8,7 @@ export default function Contact() {
 
 	return (
 		<>
-			<div className="relative w-full h-[450px] mt-20 bg-white">
+			<div className="relative w-full h-[200px] sm:h-[400px] md:h-[450px] mt-20 bg-white">
 				<div className="absolute -top-1 left-0 w-full overflow-hidden leading-none z-10">
 					<svg
 						viewBox="0 0 1200 120"
@@ -72,7 +72,7 @@ export default function Contact() {
 									<p className="font-bold">Phone</p>
 									<p>+91 9449666606</p>
 								</div>
-								<div>
+								<div className="w-full flex justify-center">
 									<div className="relative">
 										<Image
 											src="/logo_suraksha.jpg"
