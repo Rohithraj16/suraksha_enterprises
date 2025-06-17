@@ -52,7 +52,7 @@ const Navbar = () => {
 	const navItems = [
 		{ href: "/", label: "Home", hasDropdown: false },
 		{ href: "/about", label: "About", hasDropdown: false },
-		{ href: "/services", label: "Services", hasDropdown: false },
+		{ href: "/product-brands", label: "Product-Brands", hasDropdown: false },
 
 		{ href: "/contact", label: "Contact Us", hasDropdown: false },
 	];
