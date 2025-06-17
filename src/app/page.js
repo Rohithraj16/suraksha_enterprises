@@ -4,8 +4,7 @@ const Page = () => {
 	return (
 		<>
 			<style>
-				@import
-				url(&apos;https://fonts.googleapis.com/css2?family=Iceland&display=swap&apos;);
+				{`@import url("https://fonts.googleapis.com/css2?family=Iceland&display=swap");`}
 			</style>
 			<Home />
 		</>
