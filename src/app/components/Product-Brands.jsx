@@ -92,7 +92,7 @@ function Services() {
 				"24/7 Support",
 				"Quick Turnaround",
 			],
-			image: "/product_images/filter_service.jpg",
+			image: "/product_images/waterfilter_serviies_image1.jpeg",
 			alt: "Technician installing water purifier",
 		},
 	];
@@ -170,7 +170,7 @@ function Services() {
 				"Load Testing",
 				"Warranty Support",
 			],
-			image: "/product_images/ups_service.jpg",
+			image: "/product_images/ups_services_image5.jpeg",
 			alt: "UPS technician service",
 		},
 	];

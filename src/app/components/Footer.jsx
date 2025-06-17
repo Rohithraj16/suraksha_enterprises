@@ -75,7 +75,9 @@ const Footer = () => {
 								<div className="flex items-start space-x-3">
 									<MapPin className="w-5 h-5 text-cyan-400 mt-0.5 flex-shrink-0" />
 									<div>
-										<p>Ashok nagar batwadi tumkur</p>
+										<p>
+											No 1 , Bhyarava krupa main road krishnanagar tumkur 572102
+										</p>
 										<p>572102</p>
 									</div>
 								</div>
@@ -87,7 +89,7 @@ const Footer = () => {
 
 								<div className="flex items-center space-x-3">
 									<Mail className="w-5 h-5 text-cyan-400 flex-shrink-0" />
-									<span>Surakshaenterprises@gmail.com</span>
+									<span>Surakshatumkur@gmail.com</span>
 								</div>
 							</div>
 						</div>

@@ -179,30 +179,6 @@ export default function About() {
 						</div>
 					</div>
 				</div>
-
-				{/* Wave bottom */}
-				<div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-					<svg
-						viewBox="0 0 1200 120"
-						preserveAspectRatio="none"
-						className="w-full h-20"
-					>
-						<path
-							d="M0,0V46.29c47.8,22.79,103.78,29,158,17,70.5-16.22,136.43-52.38,207-63.12,87.12-13.66,174.63,12.83,261,35.2,60.15,15.65,120.15,30.55,180,24.1,36.31-3.88,70.83-17.45,104-29.4V0Z"
-							opacity=".25"
-							className="fill-white"
-						></path>
-						<path
-							d="M0,0V15.81C47.75,43.69,103.66,64.8,158,60.21c70.52-6.29,136.48-50.4,207-59.19,86.95-11.17,174.48,19.79,261,39.85C686.14,58.33,746.1,69.78,806,64c36.22-3.52,70.72-17.9,104-29.55V0Z"
-							opacity=".5"
-							className="fill-white"
-						></path>
-						<path
-							d="M0,0V5.63C47.68,42.27,103.62,82,158,82c70.55,0,136.55-44.53,207-57.38C451.38,6.12,538.88,25.67,625,41.92c60.15,11.39,120.15,22.51,180,15.17,36.31-4.18,70.83-14.59,104-24.4V0Z"
-							className="fill-white"
-						></path>
-					</svg>
-				</div>
 			</section>
 
 			{/* Section 4: Testimonials Carousel */}
