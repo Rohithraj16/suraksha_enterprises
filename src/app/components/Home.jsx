@@ -48,7 +48,7 @@ const Home = () => {
 	];
 
 	return (
-		<div className="mainContainer relative py-0 overflow-hidden mt-10 bg-[#75D0F1]">
+		<div className="mainContainer relative py-0 overflow-hidden mt-18 bg-[#75D0F1]">
 			{/* Content with padding-top to accommodate the wave */}
 			<div className=" bg-gradient-to-br from-blue-50 via-white to-cyan-50 relative overflow-hidden w-full">
 				{/* Enhanced Animated Background Elements */}
