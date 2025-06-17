@@ -89,69 +89,17 @@ const Navbar = () => {
 					<div className="hidden lg:flex items-center space-x-2">
 						{navItems.map((item) => (
 							<div key={item.href} className="relative group">
-								{item.hasDropdown ? (
-									<div>
-										<button
-											onClick={() => handleDropdownToggle(item.label)}
-											className={`flex items-center px-4 py-2 text-base font-semibold transition-all duration-200 rounded-md group ${
-												isActive(item.href) || activeDropdown === item.label
-													? "text-cyan-500"
-													: "text-gray-700 hover:text-cyan-500"
-											}`}
-										>
-											{item.label}
-											<svg
-												className={`ml-1 w-4 h-4 transition-transform duration-200 ${
-													activeDropdown === item.label ? "rotate-180" : ""
-												}`}
-												fill="none"
-												stroke="currentColor"
-												viewBox="0 0 24 24"
-											>
-												<path
-													strokeLinecap="round"
-													strokeLinejoin="round"
-													strokeWidth={2}
-													d="M19 9l-7 7-7-7"
-												/>
-											</svg>
-										</button>
-
-										{/* Dropdown Menu */}
-										<div
-											className={`absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-100 transition-all duration-200 ${
-												activeDropdown === item.label
-													? "opacity-100 visible transform translate-y-0"
-													: "opacity-0 invisible transform -translate-y-2"
-											}`}
-										>
-											<div className="py-2">
-												{item.dropdownItems.map((dropItem) => (
-													<Link
-														key={dropItem.href}
-														href={dropItem.href}
-														className="block px-4 py-2 text-sm text-gray-700 hover:text-cyan-500 hover:bg-gray-50 transition-colors duration-150"
-														onClick={() => setActiveDropdown(null)}
-													>
-														{dropItem.label}
-													</Link>
-												))}
-											</div>
-										</div>
-									</div>
-								) : (
-									<Link
-										href={item.href}
-										onClick={() => handleNavLinkClick(false)}
-										className={`px-4 py-2 text-base font-semibold transition-all duration-200 rounded-md ${
-											isActive(item.href)
-												? "text-cyan-500"
-												: "text-gray-700 hover:text-cyan-500"
-										}`}
-									>
-										{item.label}
-									</Link>
-								)}
+								<Link
+									href={item.href}
+									onClick={() => handleNavLinkClick(false)}
+									className={`px-4 py-2 text-base font-semibold transition-all duration-200 rounded-md ${
+										isActive(item.href)
+											? "text-cyan-500"
+											: "text-gray-700 hover:text-cyan-500"
+									}`}
+								>
+									{item.label}
+								</Link>
 							</div>
 						))}
 
@@ -191,7 +139,7 @@ const Navbar = () => {
 							aria-expanded={isMenuOpen}
 							aria-label="Toggle navigation menu"
 						>
-							<div className="relative w-6 h-6">
+							<div className="relative w-6 h-6 flex justify-center items-center">
 								<span
 									className={`absolute block h-0.5 w-6 bg-current transform transition-all duration-300 ${
 										isMenuOpen ? "rotate-45 translate-y-0" : "-translate-y-2"
