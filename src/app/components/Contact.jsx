@@ -206,7 +206,7 @@ export default function Contact() {
 			<section className="w-full bg-white px-6 py-6">
 				<div className="w-full h-64 md:h-96 rounded-lg shadow overflow-hidden">
 					<iframe
-						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31102.09279893499!2d77.6656752415063!3d12.987094239076027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae116dbf7e22e5%3A0xfd3df3299cd59775!2sMahadevapura%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1749576457633!5m2!1sen!2sin"
+						src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3882.2825021457425!2d77.12018967508278!3d13.332694987016875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDE5JzU3LjciTiA3N8KwMDcnMjIuMCJF!5e0!3m2!1sen!2sin!4v1750168065424!5m2!1sen!2sin"
 						width="100%"
 						height="100%"
 						style={{ border: 0 }}
