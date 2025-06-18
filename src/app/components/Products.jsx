@@ -10,7 +10,8 @@ function Products() {
 			id: 1,
 			name: "LevelLuk SD501",
 			price: 277000,
-			image: "kengenproduct01.png",
+			image:
+				"https://res.cloudinary.com/dalm60nrg/image/upload/v1750229702/kengenproduct01_tvxmbl.png",
 			description:
 				"Enagic's flagship model. The industry-leading continuous ionized electrolysis water generator system with the strongest electrolysis chamber available.",
 			rating: 4.9,
@@ -25,7 +26,8 @@ function Products() {
 			id: 2,
 			name: "Kangen K8",
 			price: 343000,
-			image: "kengenproduct2.webp",
+			image:
+				"https://res.cloudinary.com/dalm60nrg/image/upload/v1750229701/kengenproduct2_sjdovg.webp",
 			description:
 				"Enagic's most powerful antioxidant machine featuring 8 platinum-dipped titanium plates for improved water ionization and increased antioxidant production potential.",
 			rating: 4.8,
@@ -40,7 +42,8 @@ function Products() {
 			id: 3,
 			name: "ANESPA DX",
 			price: 200000,
-			image: "kengenproduct5.jpg",
+			image:
+				"https://res.cloudinary.com/dalm60nrg/image/upload/v1750229702/kengenproduct5_ewikd7.jpg",
 			description:
 				"Home Spa System that transforms your ordinary bathroom into a natural hot spring resort with continuous stream of healthy ionized mineral water.",
 			rating: 4.7,
@@ -55,7 +58,8 @@ function Products() {
 			id: 4,
 			name: "LevelLuk SD501 Platinum",
 			price: 297000,
-			image: "kengenproduct3.jpg",
+			image:
+				"https://res.cloudinary.com/dalm60nrg/image/upload/v1750229702/kengenproduct3_urebej.jpg",
 			description:
 				"Used and loved throughout 82 countries. Now comes with ONE machine capable of speaking all notifications in FIVE languages!",
 			rating: 4.9,
@@ -70,7 +74,8 @@ function Products() {
 			id: 5,
 			name: "LevelLuk Super501",
 			price: 397000,
-			image: "product4.webp",
+			image:
+				"https://res.cloudinary.com/dalm60nrg/image/upload/v1750229703/product4_z6qnb8.webp",
 			description:
 				"Enagic's top of the line model for heavy home use. No other water ionizer on the market can compare! Perfect for large families.",
 			rating: 5.0,

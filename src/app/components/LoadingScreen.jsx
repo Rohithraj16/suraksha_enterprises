@@ -44,7 +44,7 @@ export default function LoadingScreen({ children }) {
 					<div className="relative z-10 p-10 flex flex-col items-center justify-center">
 						<div className="relative w-48 h-48 md:w-64 md:h-64 flex items-center justify-center">
 							<Image
-								src="/logo_suraksha.jpg"
+								src="https://res.cloudinary.com/dalm60nrg/image/upload/v1750229703/logo_suraksha_cofosq.jpg"
 								alt="Suraksha Enterprises"
 								width={150}
 								height={150}
