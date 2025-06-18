@@ -23,7 +23,7 @@ export default function Contact() {
 				</div>
 
 				<Image
-					src="/contact-bg.jpg"
+					src="https://res.cloudinary.com/dalm60nrg/image/upload/v1750229528/contact-bg_ae9zuk.jpg"
 					alt="Background"
 					fill
 					className="object-cover object-center z-0"
@@ -75,7 +75,7 @@ export default function Contact() {
 								<div className="w-full flex justify-center">
 									<div className="relative">
 										<Image
-											src="/logo_suraksha.jpg"
+											src="https://res.cloudinary.com/dalm60nrg/image/upload/v1750229703/logo_suraksha_cofosq.jpg"
 											alt="Suraksha Logo"
 											width={250}
 											height={250}

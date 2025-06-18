@@ -24,7 +24,7 @@ const Advantages = () => {
 							</div>
 							<div className="absolute top-4 left-4 w-16 h-16 rounded-full overflow-hidden border-2 border-white shadow-lg">
 								<img
-									src="image_baby2.jpeg"
+									src="https://res.cloudinary.com/dalm60nrg/image/upload/v1750229527/image_baby2_tdjjk2.jpg"
 									alt="Child"
 									className="w-full h-full object-cover"
 								/>
@@ -64,7 +64,7 @@ const Advantages = () => {
 							</div>
 							<div className="absolute top-4 right-4 w-16 h-16 rounded-full overflow-hidden border-2 border-gray-800 shadow-lg">
 								<img
-									src="women_beauty_water.jpeg"
+									src="https://res.cloudinary.com/dalm60nrg/image/upload/v1750229787/women_beauty_water_bw7zoc.jpg"
 									alt="Woman"
 									className="w-full h-full object-cover"
 								/>
@@ -106,7 +106,7 @@ const Advantages = () => {
 							</div>
 							<div className="absolute top-4 left-4 w-16 h-16 rounded-full overflow-hidden border-2 border-white shadow-lg">
 								<img
-									src="handwash_acidic_water.jpeg"
+									src="https://res.cloudinary.com/dalm60nrg/image/upload/v1750229527/handwash_acidic_water_kkiptg.jpg"
 									alt="Person cleaning"
 									className="w-full h-full object-cover"
 								/>
@@ -148,7 +148,7 @@ const Advantages = () => {
 							</div>
 							<div className="absolute top-4 right-4 w-16 h-16 rounded-full overflow-hidden border-2 border-white shadow-lg">
 								<img
-									src="vegetable_image1.jpeg"
+									src="https://res.cloudinary.com/dalm60nrg/image/upload/v1750229786/vegetable_image1_zye9np.jpg"
 									alt="Kitchen scene"
 									className="w-full h-full object-cover"
 								/>
@@ -184,7 +184,7 @@ const Advantages = () => {
 					<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 hidden lg:block">
 						<div className="w-70 h-70 rounded-full overflow-hidden border-8 border-white shadow-2xl">
 							<img
-								src="product4.webp"
+								src="https://res.cloudinary.com/dalm60nrg/image/upload/v1750229703/product4_z6qnb8.webp"
 								alt="Water delivery professional"
 								className="w-full h-full object-cover"
 							/>

@@ -111,7 +111,7 @@ const Home = () => {
 									<div className="relative flex flex-col">
 										<div>
 											<img
-												src="/kengen_images/Kengen_Title.png"
+												src="https://res.cloudinary.com/dalm60nrg/image/upload/v1750230061/Kengen_Title_phykv9.png"
 												alt="Kengen Title"
 												className="w-80 h-auto object-contain filter drop-shadow-lg"
 											/>
@@ -298,7 +298,7 @@ const Home = () => {
 										<div className="absolute inset-0 bg-gradient-to-br from-blue-200 via-white to-cyan-200 rounded-full opacity-30 transform scale-110 animate-pulse"></div>
 
 										<img
-											src="/waterborn_fig.png"
+											src="https://res.cloudinary.com/dalm60nrg/image/upload/v1750229789/waterborn_fig_zz16wt.png"
 											alt="Waterborn Figure in Motion"
 											className="relative z-10 w-64 h-auto object-contain transform hover:scale-110 transition-all duration-700"
 											style={{
@@ -387,7 +387,7 @@ const Home = () => {
 										{/* Enhanced backdrop for image */}
 										<div className="absolute inset-0 bg-gradient-to-br from-blue-200 via-white to-cyan-200 rounded-full opacity-30 transform scale-110 animate-pulse"></div>
 										<img
-											src="/waterborn_fig.png"
+											src="https://res.cloudinary.com/dalm60nrg/image/upload/v1750229789/waterborn_fig_zz16wt.png"
 											alt="Waterborn Figure in Motion"
 											className="relative z-10 w-85 h-auto lg:w-96 object-contain transform hover:scale-103 transition-all duration-700 lg:bottom-18"
 											style={{

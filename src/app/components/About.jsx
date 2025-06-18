@@ -30,7 +30,7 @@ export default function About() {
 				</div>
 
 				<Image
-					src="/contact-bg.jpg"
+					src="https://res.cloudinary.com/dalm60nrg/image/upload/v1750229528/contact-bg_ae9zuk.jpg"
 					alt="Background"
 					fill
 					className="object-cover object-center z-0"
@@ -61,7 +61,7 @@ export default function About() {
 				{/* Image */}
 				<div className="w-full md:w-1/2 flex justify-center mb-10 md:mb-0">
 					<Image
-						src="/about_page_pics/about-graphic.png"
+						src="https://res.cloudinary.com/dalm60nrg/image/upload/v1750229824/about-graphic_udtivm.png"
 						alt="Water Bottle and Ice Cubes"
 						width={500}
 						height={500}
@@ -170,7 +170,7 @@ export default function About() {
 					<div className="md:w-1/2 relative mb-12 md:mb-0 flex justify-center">
 						<div className="relative z-10 shadow-xl rounded-md overflow-hidden">
 							<Image
-								src="/about_page_pics/bottle.jpeg"
+								src="https://res.cloudinary.com/dalm60nrg/image/upload/v1750229826/bottle_djt6qi.jpg"
 								alt="Water Bottle"
 								width={350}
 								height={350}
@@ -200,35 +200,35 @@ export default function About() {
 						{
 							name: "Person1",
 							role: "Designer",
-							img: "/about_page_pics/profile_man.jpg",
+							img: "https://res.cloudinary.com/dalm60nrg/image/upload/v1750229828/profile_man_fk5kcw.jpg",
 							message:
 								"Suraksha delivers beyond expectations. Pure water with great taste!",
 						},
 						{
 							name: "Person2",
 							role: "Manager",
-							img: "/about_page_pics/profile_man.jpg",
+							img: "https://res.cloudinary.com/dalm60nrg/image/upload/v1750229828/profile_man_fk5kcw.jpg",
 							message:
 								"Trusted quality and excellent service from Suraksha. Highly recommended!",
 						},
 						{
 							name: "Person3",
 							role: "Designer",
-							img: "/about_page_pics/profile_man.jpg",
+							img: "https://res.cloudinary.com/dalm60nrg/image/upload/v1750229828/profile_man_fk5kcw.jpg",
 							message:
 								"Suraksha delivers beyond expectations. Pure water with great taste!",
 						},
 						{
 							name: "Person4",
 							role: "Designer",
-							img: "/about_page_pics/profile_man.jpg",
+							img: "https://res.cloudinary.com/dalm60nrg/image/upload/v1750229828/profile_man_fk5kcw.jpg",
 							message:
 								"Suraksha delivers beyond expectations. Pure water with great taste!",
 						},
 						{
 							name: "Person5",
 							role: "Designer",
-							img: "/about_page_pics/profile_man.jpg",
+							img: "https://res.cloudinary.com/dalm60nrg/image/upload/v1750229828/profile_man_fk5kcw.jpg",
 							message:
 								"Suraksha delivers beyond expectations. Pure water with great taste!",
 						},

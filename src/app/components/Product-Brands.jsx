@@ -32,7 +32,8 @@ function Services() {
 				"Kent Maxx UV",
 				"Kent Ultra Storage",
 			],
-			image: "/product_images/kent.png",
+			image:
+				"https://res.cloudinary.com/dalm60nrg/image/upload/v1750229913/kent_iornga.png",
 			alt: "Kent water purifiers lineup",
 		},
 		{
@@ -47,7 +48,8 @@ function Services() {
 				"High TDS Removal Models",
 				"Advanced Auto-Clean Function",
 			],
-			image: "/product_images/copper_pearl.webp",
+			image:
+				"https://res.cloudinary.com/dalm60nrg/image/upload/v1750229908/copper_pearl_rn4nt2.webp",
 			alt: "Copper Pearl water purifier",
 		},
 		{
@@ -62,7 +64,8 @@ function Services() {
 				"Dual Cartridge Systems",
 				"Smart LED Indicators",
 			],
-			image: "/product_images/lux_pure.png",
+			image:
+				"https://res.cloudinary.com/dalm60nrg/image/upload/v1750229913/lux_pure_rtwgub.png",
 			alt: "Lux Pure RO water systems",
 		},
 		{
@@ -77,7 +80,8 @@ function Services() {
 				"Aqua Guard Marvel",
 				"UV+UF Countertop Solutions",
 			],
-			image: "/product_images/aqua_guard.webp",
+			image:
+				"https://res.cloudinary.com/dalm60nrg/image/upload/v1750229906/aqua_guard_ofcq8y.webp",
 			alt: "Aqua Guard purifier models",
 		},
 		{
@@ -92,7 +96,8 @@ function Services() {
 				"24/7 Support",
 				"Quick Turnaround",
 			],
-			image: "/product_images/waterfilter_serviies_image1.jpeg",
+			image:
+				"https://res.cloudinary.com/dalm60nrg/image/upload/v1750229920/waterfilter_serviies_image1_ugoyjn.jpg",
 			alt: "Technician installing water purifier",
 		},
 	];
@@ -110,7 +115,8 @@ function Services() {
 				"Digital Display",
 				"Compact Design",
 			],
-			image: "/product_images/keven_ups.jpg",
+			image:
+				"https://res.cloudinary.com/dalm60nrg/image/upload/v1750229911/keven_ups_uuatv8.jpg",
 			alt: "Keven UPS system",
 		},
 		{
@@ -125,7 +131,8 @@ function Services() {
 				"Auto Reset",
 				"Battery Protection",
 			],
-			image: "/product_images/micro_tek.jpg",
+			image:
+				"https://res.cloudinary.com/dalm60nrg/image/upload/v1750229911/keven_ups_uuatv8.jpg",
 			alt: "Microtek UPS",
 		},
 		{
@@ -140,7 +147,8 @@ function Services() {
 				"Thermal Management",
 				"Short Circuit Proof",
 			],
-			image: "/product_images/sf_sonic.webp",
+			image:
+				"https://res.cloudinary.com/dalm60nrg/image/upload/v1750229914/sf_sonic_rzkt19.webp",
 			alt: "SF Sonic UPS",
 		},
 		{
@@ -155,7 +163,8 @@ function Services() {
 				"Supports Solar Input",
 				"Overload Warning",
 			],
-			image: "/product_images/sukam_ups.webp",
+			image:
+				"https://res.cloudinary.com/dalm60nrg/image/upload/v1750229914/sukam_ups_wq445w.webp",
 			alt: "Sukam UPS",
 		},
 		{
@@ -170,7 +179,8 @@ function Services() {
 				"Load Testing",
 				"Warranty Support",
 			],
-			image: "/product_images/ups_services_image5.jpeg",
+			image:
+				"https://res.cloudinary.com/dalm60nrg/image/upload/v1750229917/ups_services_image5_v5koew.jpg",
 			alt: "UPS technician service",
 		},
 	];
@@ -188,7 +198,8 @@ function Services() {
 				"Overheat Protection",
 				"Wall-Mount Design",
 			],
-			image: "/product_images/v_guard_geyser.webp",
+			image:
+				"https://res.cloudinary.com/dalm60nrg/image/upload/v1750229918/v_guard_geyser_exwlxo.webp",
 			alt: "V-Guard gas geyser",
 		},
 		{
@@ -203,7 +214,8 @@ function Services() {
 				"Rustproof Body",
 				"Slim Design",
 			],
-			image: "/product_images/hot_touch_geyser.webp",
+			image:
+				"https://res.cloudinary.com/dalm60nrg/image/upload/v1750229908/hot_touch_geyser_cmzytb.webp",
 			alt: "Hot Touch gas geyser",
 		},
 		{
@@ -218,7 +230,8 @@ function Services() {
 				"High Efficiency Burner",
 				"IS Certified",
 			],
-			image: "/product_images/racold_geyser.webp",
+			image:
+				"https://res.cloudinary.com/dalm60nrg/image/upload/v1750229913/racold_geyser_cpgzj5.webp",
 			alt: "Racold gas geyser",
 		},
 		{
@@ -233,7 +246,8 @@ function Services() {
 				"Anti-Freeze Protection",
 				"Low Gas Consumption",
 			],
-			image: "/product_images/blossom_geyser.webp",
+			image:
+				"https://res.cloudinary.com/dalm60nrg/image/upload/v1750229906/blossom_geyser_x4ootr.webp",
 			alt: "Blossom gas geyser",
 		},
 		{
@@ -248,7 +262,8 @@ function Services() {
 				"Gas Line Inspection",
 				"Annual Servicing Plans",
 			],
-			image: "/product_images/gas_geyser_service.jpg",
+			image:
+				"https://res.cloudinary.com/dalm60nrg/image/upload/v1750230004/gas_geyser_service_vbkd88.jpg",
 			alt: "Geyser technician service",
 		},
 	];
