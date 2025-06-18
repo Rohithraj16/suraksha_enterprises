@@ -22,7 +22,7 @@ const Advantages = () => {
 							<div className="absolute top-4 left-20 bg-green-500 text-white px-4 py-2 rounded-lg text-sm font-bold shadow-lg">
 								7.0 pH
 							</div>
-							<div className="absolute top-4 left-4 w-20 h-20 rounded-full overflow-hidden border-2 border-white shadow-lg">
+							<div className="absolute top-4 left-4 w-16 h-16 rounded-full overflow-hidden border-2 border-white shadow-lg">
 								<img
 									src="image_baby2.jpeg"
 									alt="Child"
@@ -49,7 +49,9 @@ const Advantages = () => {
 									</li>
 									<li className="flex items-center">
 										<span className="mr-3 text-2xl">💧</span>
-										Best for medications and baby formula
+										<span className="text-left">
+											Best for medications and baby formula
+										</span>
 									</li>
 								</ul>
 							</div>
@@ -60,7 +62,7 @@ const Advantages = () => {
 							<div className="absolute top-4 right-20 bg-yellow-500 text-white px-4 py-2 rounded-lg text-sm font-bold shadow-lg">
 								4.5 - 6 pH
 							</div>
-							<div className="absolute top-4 right-4 w-20 h-20 rounded-full overflow-hidden border-2 border-gray-800 shadow-lg">
+							<div className="absolute top-4 right-4 w-16 h-16 rounded-full overflow-hidden border-2 border-gray-800 shadow-lg">
 								<img
 									src="women_beauty_water.jpeg"
 									alt="Woman"
@@ -102,7 +104,7 @@ const Advantages = () => {
 							<div className="absolute top-4 left-20 bg-orange-500 text-white px-4 py-2 rounded-lg text-sm font-bold shadow-lg">
 								2.5 pH
 							</div>
-							<div className="absolute top-4 left-4 w-20 h-20 rounded-full overflow-hidden border-2 border-white shadow-lg">
+							<div className="absolute top-4 left-4 w-16 h-16 rounded-full overflow-hidden border-2 border-white shadow-lg">
 								<img
 									src="handwash_acidic_water.jpeg"
 									alt="Person cleaning"
@@ -144,7 +146,7 @@ const Advantages = () => {
 							<div className="absolute top-4 right-20 bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-bold shadow-lg">
 								11.5 pH
 							</div>
-							<div className="absolute top-4 right-4 w-20 h-20 rounded-full overflow-hidden border-2 border-white shadow-lg">
+							<div className="absolute top-4 right-4 w-16 h-16 rounded-full overflow-hidden border-2 border-white shadow-lg">
 								<img
 									src="vegetable_image1.jpeg"
 									alt="Kitchen scene"
