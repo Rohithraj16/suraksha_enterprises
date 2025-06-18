@@ -74,7 +74,7 @@ const Navbar = () => {
 						>
 							<div className="relative">
 								<Image
-									src="/logo_suraksha.jpg"
+									src="https://res.cloudinary.com/dalm60nrg/image/upload/v1750229703/logo_suraksha_cofosq.jpg"
 									alt="Suraksha Logo"
 									width={70}
 									height={70}
